@@ -77,6 +77,8 @@ const cart = () => {
             localStorage.removeItem('cart');
             renderCart([]);
             cartTotal.textContent = 0;
+            const itemgoodsInCart = document.querySelector('.counter');
+            itemgoodsInCart.textContent = 0;
         });
     });
 }
